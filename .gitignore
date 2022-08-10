@@ -8,7 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-Juniper_Work/Resources/
+Juniper_Work/
 build/
 develop-eggs/
 dist/
