@@ -22,3 +22,5 @@ SELECT t.name,
 INTO top_tracks
 FROM Tracks as t, Artists as a;
 
+select
+
