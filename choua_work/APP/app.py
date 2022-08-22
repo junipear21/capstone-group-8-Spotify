@@ -5,7 +5,7 @@ app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 # Route to render index.html template using data from Mongo
-@app.route("/")
+@app.route("/homepage")
 def home():
     # Return template and data
     return render_template("index.html")
@@ -14,6 +14,22 @@ def home():
 def about_us():
     # Return template and data
     return render_template("about_us.html")
+
+@app.route("/tableau1")
+def tableau():
+    # Return template and data
+    return render_template("tableau1.html")
+
+
+@app.route("/tableau2")
+def tableau_2():
+    # Return template and data
+    return render_template("tableau2.html")
+
+@app.route("/predictor")
+def predictor():
+    # Return template and data
+    return render_template("predictor.html")
 
 #############################################################
 
