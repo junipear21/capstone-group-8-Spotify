@@ -9,6 +9,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 Juniper_Work/Resources
+Juniper_Work/spotify.sqlite
 build/
 develop-eggs/
 dist/
