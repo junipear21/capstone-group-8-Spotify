@@ -1,9 +1,10 @@
 body {
   background-color: #191414;
+  background-image: url("../images/spotify-music.gif");
 }
 
 .jumbotron {
-  /* background-image: url("../images/nasa.jpg"); */
+  /* background-image: url("../images/spotify-music.gif"); */
   background-size: 100% 100%;
   background-color: #1DB954;
   text-align: center;
