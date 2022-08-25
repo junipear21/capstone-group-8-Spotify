@@ -8,8 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-Juniper-Work/Resources
-Juniper-Work/spotify.sqlite
+capstone-group-8-Spotify\Juniper-Work\spotify.sqlite
 build/
 develop-eggs/
 dist/
@@ -129,3 +128,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+Juniper-Work/spotify.sqlite
+*.sqlite
