@@ -33,29 +33,80 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-// Up Arrow
-// browser window scroll (in pixels) after which the "back to top" link is shown
-var offset = 300,
+$(document).ready(function() {
+    console.log("Page Loaded");
 
-// browser window scroll (in pixels) after which the "back to top" link opacity is reduced
-offset_opacity = 1200,
-
-//duration of the top scrolling animation (in ms)
-scroll_top_duration = 700,
-
-//grab the "back to top" link
-$back_to_top = document.querySelector('.cd-top');
-
-// hide or show the "back to top" link
-window.addEventListener('scroll', function(e) {
-  (window.scrollY > offset) ? $back_to_top.classList.add("cd-is-visible") : $back_to_top.classList.remove('cd-is-visible', 'cd-fade-out');
+    $("#recommendation_button").click(function() {
+        // alert("button clicked!");
+        makePredictions();
+    });
 });
 
-//smooth scroll to top
-$back_to_top.addEventListener('click', function(e) {
-  e.preventDefault();
-  scroll({
-   top: 0,
-    behavior: "smooth"
-  });
-});
+
+// call Flask API endpoint
+function makePredictions() {
+    var song = $("#song").val();
+
+    // check if inputs are valid
+
+    // create the payload
+    var payload = {
+        "song": song
+    }
+
+    // Perform a POST request to the query URL
+    $.ajax({
+        type: "POST",
+        url: "/makePredictions",
+        contentType: 'application/json;charset=UTF-8',
+        data: JSON.stringify({ "data": payload }),
+        success: function(returnedData) {
+            // print it
+            console.log(returnedData);
+            renderTable(returnedData.prediction)
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+            alert("Status: " + textStatus);
+            alert("Error: " + errorThrown);
+        }
+    });
+
+}
+
+function renderTable(inp_data) {
+    // init html string
+    let html = "";
+
+    // destroy datatable
+    $('#sql_table').DataTable().clear().destroy();
+
+    // loop through all rows
+    inp_data.forEach(function(row) {
+        html += "<tr>";
+
+        // loop through each cell (order matters)
+        html += `<td>${row.PassengerId}</td>`;
+        html += `<td>${row.Survived}</td>`;
+        html += `<td>${row.Pclass}</td>`;
+        html += `<td>${row.Name}</td>`;
+        html += `<td>${row.Sex}</td>`;
+        html += `<td>${row.Age}</td>`;
+        html += `<td>${row.SibSp}</td>`;
+        html += `<td>${row.Parch}</td>`;
+        html += `<td>${row.Ticket}</td>`;
+        html += `<td>${row.Fare}</td>`;
+        html += `<td>${row.Cabin}</td>`;
+        html += `<td>${row.Embarked}</td>`;
+
+        // close the row
+        html += "</tr>";
+    });
+
+    // shove the html in our elements
+    console.log(html);
+    $("#sql_table tbody").html("");
+    $("#sql_table tbody").append(html);
+
+    // remake data table
+    $('#sql_table').DataTable();
+}

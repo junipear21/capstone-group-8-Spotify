@@ -6,9 +6,18 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Welcome to our music recommender!</title>
-        <link rel="icon" type="image/x-icon" href="../assets/spotifyicon3.ico" />
+        <link rel="icon" type="image/x-icon" href="static/assets/spotifyicon3.ico" />
         <!-- <link href="css/styles.css" rel="stylesheet" /> -->
-        <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+            <!-- Boostrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+        <!-- Our CSS -->
+        <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+        <!-- JS -->
+        <script type="text/javascript" src="static/js/sql.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -36,19 +45,23 @@
                 <a class="btn btn-lg btn-light" href="#Find-Music">Let's go find some music!</a>
             </div>
         </header>
-        
+        <div class="container px-8">
+        <div class="row gx-4 justify-content-center">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2VxeLyX666F8uXCJ0dZF8B?utm_source=generator" width="20%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>        
+        </div>
         <!-- About section-->
         <section id="about">
             <div class="container px-8">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-25">
                         <h2>About this page</h2>
-                        <p class="lead"><strong>On our page you will be able to view music trends from 1960's through the 2000's. Our music data comes from Spotify. Not only are you able to review trends 
+                        <p class="lead"><strong>On our page you will be able to view music trends from 1960's through 2000's. Our music data comes from Spotify. Not only are you able to review trends 
                             but you can find new music from a few input of your interest in our Music Finder section below.</strong></p>
                     </div>
                 </div>
             </div>
         </section>
+
 
         <!-- Tableau1 section-->
         <section id="Tableau1">
@@ -87,15 +100,45 @@
             </div>
         </section>
 
-        <img src = "../static/images/.gif">
-
         <!-- Predictor section-->
         <section id="Find-Music">
-            <div class="container px-8">
+            <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-25">
-                        <h2><b>Music Finder</b></h2>
+                        <h2><b>Music Recommender</b></h2>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+                        <div class="form-group">
+                            <label class="col-form-label" for="song" style= strong><b>Enter a Song Name</b></label>
+                            <input type="text" class="form-control" value="Toxic" id="song" style="height:50px;width:1000px">
+                        </div>
+                    </div>
+                    <button type="button" id="recommendation_button" class="button" style="height:75px;width:200px">Get Recommendations!</button>
+                </div>
+            </div>
+            <hr style="color:#1db954; border-width: 5px;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <table id="sql_table" class="table table-striped">
+                            <thead style="color:#1db954">
+                                <tr>
+                                    <th>PassengerId</th>
+                                    <th>Survived</th>
+                                    <th>Pclass</th>
+                                    <th>Name</th>
+                                    <th>Gender</th>
+                                    <th>Age</th>
+                                    <th>SibSp</th>
+                                    <th>Parch</th>
+                                    <th>Ticket</th>
+                                    <th>Fare</th>
+                                    <th>Cabin</th>
+                                    <th>Embarked</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+        
                     </div>
                 </div>
             </div>
@@ -156,13 +199,13 @@
                                         <li>Minimal custom CSS so you are free to explore your own unique design options</li>
                                     </ul>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4" >
                                     <h3><b>Zach Diercks</b></h3>
                                     <ul>
-                                        <li>Clickable nav links that smooth scroll to page sections</li>
-                                        <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-                                        <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-                                        <li>Minimal custom CSS so you are free to explore your own unique design options</li>
+                                        <li>Business Analyst with Northwest Respiratory Services</li>
+                                        <li>LinkedIn: <a href="https://www.linkedin.com/in/zachary-diercks-859889214/"target="_blank" alt="LinkedIn">https://www.linkedin.com/in/zachary-diercks-859889214/</a></li>
+                                        <li>GitHub: <a href="https://github.com/diercz"target="_blank" alt="GitHub">https://github.com/diercz</a></li>
+                                        <li>Email: diercz@gmail.com</li>
                                     </ul>
                                 </div>
                                 
@@ -186,7 +229,9 @@
                     <div class="col-lg-25">
                         <h2>Resources</h2>
                         <p class="lead">
-                        <a href="https://www.w3schools.com/html/html_images.asp" target="_blank" alt="Hmtl Images"><img src="../static/images/w3.jpg"></a>  
+                        <a href="https://www.w3schools.com/html/html_images.asp" target="_blank" alt="Hmtl Images"><img src="../static/images/w3.jpg"></a> 
+
+                        <a href=" https://www.kaggle.com/datasets/yamaerenay/spotify-dataset-19212020-600k-tracks" target="_blank" alt="Hmtl Images"><img src="../static/images/Dataset.jpg"></a>
                         </p>
                     </div>
                 </div>
@@ -198,9 +243,5 @@
         <footer class="py-5 bg-dark">
             <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; MusicRecommender 2022</p></div>
         </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
     </body>
 </html>
