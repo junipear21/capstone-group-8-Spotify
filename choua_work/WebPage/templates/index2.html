@@ -17,11 +17,13 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
         <!-- JS -->
-        <script type="text/javascript" src="static/js/sql.js"></script>
+        <script type="text/javascript" src="static/js/scripts.js"></script>
+       
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top" id="mainNav">
             <div class="container px-4">
                 <a class="navbar-brand" href="#page-top">Back to the Top ^</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -30,6 +32,7 @@
                         <li class="nav-item"><a class="nav-link" href="#about"><b>About</a></b></li>
                         <li class="nav-item"><a class="nav-link" href="#Tableau1"><b>Tableau1</b></a></li>
                         <li class="nav-item"><a class="nav-link" href="#Tableau2"><b>Tableau2</b></a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="/tableau2" button type="button">Tableau 2</a></button></b></a></li> -->
                         <li class="nav-item"><a class="nav-link" href="#Database"><b>Database</b></a></li>
                         <li class="nav-item"><a class="nav-link" href="#Find-Music"><b>Find Music</b></a></li>
                         <li class="nav-item"><a class="nav-link" href="#AboutUs"><b>About Us</b></a></li>
@@ -55,8 +58,8 @@
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-25">
                         <h2>About this page</h2>
-                        <p class="lead"><strong>On our page you will be able to view music trends from 1960's through 2000's. Our music data comes from Spotify. Not only are you able to review trends 
-                            but you can find new music from a few input of your interest in our Music Finder section below.</strong></p>
+                        <p class="lead"><strong>On our page you will be able to view music trends from 1960's through 2000's using global data from Spotify. Not only are you able to review trends 
+                            but you can find new music similar to a song of your interest in our Music Finder section below.</strong></p>
                     </div>
                 </div>
             </div>
@@ -69,13 +72,14 @@
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-25">
                         <h2><b>Tableau 1</b></h2>
-                        <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-                        <ul>
-                            <li>Clickable nav links that smooth scroll to page sections</li>
-                            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-                            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-                            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-                        </ul>
+                        <p class="lead">
+                        
+                        This dashboard shows the popularity of artists within the many different genres of music.
+                        Selecting any one of the genres with show you the top ten ranked artists in that genre.
+                        Additionally you may input an artist’s name and it will update to show which genres the artist belongs
+                        to. You may also select a genre in the selection box if you do not wish to scroll through the selection
+                        matrix.
+                        </p>
                     </div>
 
                 <div class='tableauPlaceholder' id='viz1661217783924' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify-test&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Spotify-test&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify-test&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1661217783924');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1220px';vizElement.style.maxWidth='1320px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1220px';vizElement.style.maxWidth='1320px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
@@ -93,9 +97,9 @@
                         <h2><B>Tableau 2</B></h2>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
                     </div>
-                </div><b></b>
+                </div><br></br>
                 
-            <div class='tableauPlaceholder' id='viz1661456751261' style='position: relative'><noscript><a href='#'><img alt='Genre Popularity by Decade ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify_Dashboard_16612875479370&#47;Sheet3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Spotify_Dashboard_16612875479370&#47;Sheet3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify_Dashboard_16612875479370&#47;Sheet3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1661456751261');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                <div class='tableauPlaceholder' id='viz1661456751261' style='position: relative'><noscript><a href='#'><img alt='Genre Popularity by Decade ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify_Dashboard_16612875479370&#47;Sheet3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Spotify_Dashboard_16612875479370&#47;Sheet3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify_Dashboard_16612875479370&#47;Sheet3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1661456751261');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
             </div>
         </section>
@@ -108,8 +112,8 @@
                         <h2><b>Music Recommender</b></h2>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
                         <div class="form-group">
-                            <label class="col-form-label" for="song" style= strong><b>Enter a Song Name</b></label>
-                            <input type="text" class="form-control" value="Toxic" id="song" style="height:50px;width:1000px">
+                            <label class="col-form-label" for="song" font-weight: bolder><b>Enter a Song Name</b></label>
+                            <input type="text" class="form-control" value="Toxic" id="song" style= height:50px;width:1000px >
                         </div>
                     </div>
                     <button type="button" id="recommendation_button" class="button" style="height:75px;width:200px">Get Recommendations!</button>
@@ -120,20 +124,23 @@
                 <div class="row">
                     <div class="col-md-12">
                         <table id="sql_table" class="table table-striped">
-                            <thead style="color:#1db954">
+                            <thead style="color:#1db954; font-size: 1.2em";>
                                 <tr>
-                                    <th>PassengerId</th>
-                                    <th>Survived</th>
-                                    <th>Pclass</th>
-                                    <th>Name</th>
-                                    <th>Gender</th>
-                                    <th>Age</th>
-                                    <th>SibSp</th>
-                                    <th>Parch</th>
-                                    <th>Ticket</th>
-                                    <th>Fare</th>
-                                    <th>Cabin</th>
-                                    <th>Embarked</th>
+                                    <th>name</th>
+                                    <th>popularity</th>
+                                    <th>duration_ms</th>
+                                    <th>explicit</th>
+                                    <th>artists</th>
+                                    <th>release_date</th>
+                                    <th>danceability</th>
+                                    <th>energy</th>
+                                    <th>key</th>
+                                    <th>loudness</th>
+                                    <th>mode</th>
+                                    <th>speechiness</th>
+                                    <th>acousticness</th>
+                                    <th>instrumentalness</th>
+                                    <th>liveness</th>
                                 </tr>
                             </thead>
                             <tbody></tbody>
@@ -173,49 +180,42 @@
                     </div>
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <h3><b>Juniper Cherne</b></h3>
-                                        <ul>
-                                        <li><b>Clickable nav links that smooth scroll to page sections</b></li>
-                                        <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-                                        <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-                                        <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-                                        </ul>
+                                        ....
                                     </p>
                                 </div>
 
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <img src= "../static/images/Tom.jpg" style="width:350px; height:450px;">
                                     <b></b>
-                                    <h3><b>Thomas Stowell</b></h3>
+                                    <h3><b><u>Thomas Stowell</u></b></h3>
                                     <p>Tom is currently with Mayo Clinic as a Business Analyst on the education team. He would like to use his new skills to improve educational materials and staff satisfaction. Tom enjoys restoring classic arcade machines in his spare time.</p>
                                 </div>
-                                <div class="col-md-4">
+                                <br></br>
+                                <div class="col-md-6">
                                     <h3><b>John Espinosa</b></h3>
-                                    <ul>
-                                        <li>Clickable nav links that smooth scroll to page sections</li>
-                                        <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-                                        <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-                                        <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-                                    </ul>
+                                    <p>John Espinoza is a strategic consultant to KW Consulting and owner of J2P Solutions. He has years of private sector management experience in urban and rural NewMexico. In his management roles, he developed a strong ability to effectively identify and analyze factors that affect the return on investment for the business, management, and staff. Most recently he has served as a consultant to a collective of local governments to analyze and provide recommendations for the economic recovery in New Mexico. Specifically he performed data analysis and provided support for the City of Deming Workforce Recruitment and Retention Report. In addition, he completed research and data support for economic recovery efforts in the seven-county planning and development district, Eastern Plains Council of Governments. He continues to develop and refine the skills needed to perform additional research and analysis in an effective and proficient manner.</p>
                                 </div>
-                                <div class="col-md-4" >
+                                <br></br>
+                                <br></br>
+                                <div class="col-md-6" >
                                     <h3><b>Zach Diercks</b></h3>
                                     <ul>
-                                        <li>Business Analyst with Northwest Respiratory Services</li>
-                                        <li>LinkedIn: <a href="https://www.linkedin.com/in/zachary-diercks-859889214/"target="_blank" alt="LinkedIn">https://www.linkedin.com/in/zachary-diercks-859889214/</a></li>
-                                        <li>GitHub: <a href="https://github.com/diercz"target="_blank" alt="GitHub">https://github.com/diercz</a></li>
-                                        <li>Email: diercz@gmail.com</li>
+                                        <li><p>Business Analyst with Northwest Respiratory Services</p></li>
+                                        <li><p>LinkedIn: <a href="https://www.linkedin.com/in/zachary-diercks-859889214/"target="_blank" alt="LinkedIn">https://www.linkedin.com/in/zachary-diercks-859889214/</a></p></li>
+                                        <li><p>GitHub: <a href="https://github.com/diercz"target="_blank" alt="GitHub">https://github.com/diercz</a></p></li>
+                                        <li><p>Email: diercz@gmail.com</p></li>
                                     </ul>
                                 </div>
                                 
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <h3><b>Choua Vang</b></h3>
                                     <ul>
-                                        <li>Clickable nav links that smooth scroll to page sections</li>
-                                        <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-                                        <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-                                        <li>Minimal custom CSS so you are free to explore your own unique design options</li>
+                                        <li><p>Clinical Program Analyst</p></li>
+                                        <li><p>In the PBM industry for over 10 years.</p></li>
+                                        <li><p>Furture plans are to move into a data analyst role that will utilize new data analysis and visualizations skills.</p></li>                                        <li><p>GitHub: <a href="https://github.com/cvangx286"target="_blank" alt="GitHub">https://github.com/cvangx286</a></p></li>
+                                        <li><p>Email: cvangx286@gmail.com</p></li>
                                     </ul>
                                 </div>
                             </div>   
@@ -226,12 +226,15 @@
         <section id="Resources">
             <div class="container px-8">
                 <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-25">
+                    <div class="col-xl-25">
                         <h2>Resources</h2>
                         <p class="lead">
-                        <a href="https://www.w3schools.com/html/html_images.asp" target="_blank" alt="Hmtl Images"><img src="../static/images/w3.jpg"></a> 
+                        <a href="https://www.w3schools.com/html/html_images.asp" target="_blank" alt="Hmtl Images"><img src="../static/images/w3.jpg"></a>
+                        <a href="https://usbrandcolors.com/spotify-colors/#:~:text=The%20official%20Spotify%20colors%20are%20green%2C%20black%20and%20white" target="_blank" alt="Hmtl Images"><img src="../static/images/spotifycolors.jpg"></a><br></br>
+                        <a href=" https://www.kaggle.com/datasets/yamaerenay/spotify-dataset-19212020-600k-tracks" target="_blank" alt="Hmtl Images"><img src="../static/images/Dataset.jpg"></a><br></br>
+                        <a href="https://medium.com/@boplantinga/what-do-spotifys-audio-features-tell-us-about-this-year-s-eurovision-song-contest-66ad188e112a" target="_blank" alt="Hmtl Images"><img src="../static/images/SpotifyCharacteristics.jpg"></a><br></br>
+                        <a href="https://www.youtube.com/watch?v=dkV8HrvMr5A" target="_blank" alt="Hmtl Images"><img src="../static/images/howtoaddbuttion.jpg"></a><b></b>
 
-                        <a href=" https://www.kaggle.com/datasets/yamaerenay/spotify-dataset-19212020-600k-tracks" target="_blank" alt="Hmtl Images"><img src="../static/images/Dataset.jpg"></a>
                         </p>
                     </div>
                 </div>

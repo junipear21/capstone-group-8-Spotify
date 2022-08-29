@@ -85,18 +85,21 @@ function renderTable(inp_data) {
         html += "<tr>";
 
         // loop through each cell (order matters)
-        html += `<td>${row.PassengerId}</td>`;
-        html += `<td>${row.Survived}</td>`;
-        html += `<td>${row.Pclass}</td>`;
-        html += `<td>${row.Name}</td>`;
-        html += `<td>${row.Sex}</td>`;
-        html += `<td>${row.Age}</td>`;
-        html += `<td>${row.SibSp}</td>`;
-        html += `<td>${row.Parch}</td>`;
-        html += `<td>${row.Ticket}</td>`;
-        html += `<td>${row.Fare}</td>`;
-        html += `<td>${row.Cabin}</td>`;
-        html += `<td>${row.Embarked}</td>`;
+        html += `<td>${row.name}</td>`;
+        html += `<td>${row.popularity}</td>`;
+        html += `<td>${row.duration_ms}</td>`;
+        html += `<td>${row.explicit}</td>`;
+        html += `<td>${row.artists}</td>`;
+        html += `<td>${row.release_date}</td>`;
+        html += `<td>${row.danceability}</td>`;
+        html += `<td>${row.energy}</td>`;
+        html += `<td>${row.key}</td>`;
+        html += `<td>${row.loudness}</td>`;
+        html += `<td>${row.mode}</td>`;
+        html += `<td>${row.speechiness}</td>`;
+        html += `<td>${row.acousticness}</td>`;
+        html += `<td>${row.instrumentalness}</td>`;
+        html += `<td>${row.liveness}</td>`;
 
         // close the row
         html += "</tr>";
@@ -110,3 +113,4 @@ function renderTable(inp_data) {
     // remake data table
     $('#sql_table').DataTable();
 }
+

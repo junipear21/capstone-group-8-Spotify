@@ -15,6 +15,11 @@ def home():
     # Return template and data
     return render_template("index2.html")
 
+# @app.route("/tableau2")
+# def tableau2():
+#     # Return template and data
+#     return render_template("tableau2copy.html")
+
 @app.route("/makePredictions", methods=["POST"])
 def makePredictions():
     content = request.json["data"]

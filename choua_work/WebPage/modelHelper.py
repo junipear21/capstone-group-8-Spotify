@@ -7,10 +7,10 @@ from sklearn.neighbors import NearestNeighbors
 
 class ModelHelper():
     def __init__(self):
-        # self.model_load = pickle.load(open("model_knn.h5", 'rb'))
-        # self.KNN_top_tracks_proc = pd.read_csv("KNN_top_tracks_proc.csv")
-        # self.KNN_top_tracks_alpha = pd.read_csv("KNN_top_tracks_alpha.csv")
-        pass
+        self.model_load = pickle.load(open("model_knn.h5", 'rb'))
+        self.KNN_top_tracks_proc = pd.read_csv("KNN_top_tracks_proc.csv")
+        self.KNN_top_tracks_alpha = pd.read_csv("KNN_top_tracks_alpha.csv")
+        # pass
 
     def recommender(self, song):
        
