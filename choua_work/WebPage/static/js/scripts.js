@@ -86,20 +86,14 @@ function renderTable(inp_data) {
 
         // loop through each cell (order matters)
         html += `<td>${row.name}</td>`;
-        html += `<td>${row.popularity}</td>`;
-        html += `<td>${row.duration_ms}</td>`;
-        html += `<td>${row.explicit}</td>`;
         html += `<td>${row.artists}</td>`;
         html += `<td>${row.release_date}</td>`;
         html += `<td>${row.danceability}</td>`;
         html += `<td>${row.energy}</td>`;
-        html += `<td>${row.key}</td>`;
-        html += `<td>${row.loudness}</td>`;
-        html += `<td>${row.mode}</td>`;
-        html += `<td>${row.speechiness}</td>`;
         html += `<td>${row.acousticness}</td>`;
         html += `<td>${row.instrumentalness}</td>`;
         html += `<td>${row.liveness}</td>`;
+        html += `<td>${row.tempo}</td>`;
 
         // close the row
         html += "</tr>";

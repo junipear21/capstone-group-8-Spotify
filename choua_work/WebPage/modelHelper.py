@@ -4,12 +4,14 @@ import time
 import pickle
 import numpy as np
 from sklearn.neighbors import NearestNeighbors
+from sklearn.cluster import KMeans
+
 
 class ModelHelper():
     def __init__(self):
         self.model_load = pickle.load(open("model_knn.h5", 'rb'))
-        self.KNN_top_tracks_proc = pd.read_csv("KNN_top_tracks_proc.csv")
-        self.KNN_top_tracks_alpha = pd.read_csv("KNN_top_tracks_alpha.csv")
+        self.KNN_top_tracks_proc = pd.read_csv("knn_top_tracks_proc.csv").set_index("name")
+        self.KNN_top_tracks_alpha = pd.read_csv("knn_top_tracks_alpha.csv")
         # pass
 
     def recommender(self, song):

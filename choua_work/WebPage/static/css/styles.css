@@ -11337,3 +11337,39 @@ section {
 p {
   font-size: 23px;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.dataTables_wrapper {
+  color: "white";
+}
+
+.dataTables_length {
+  color: "white";
+}
+
+.dataTables_filter {
+  color: white;
+}
+
+.dataTables_paginate {
+  color: "white";
+}
+
+.dataTables_info {
+  color: "white";
+}
+
+.label {
+  color:"white";
+}
+
+.paginate_button {
+  color: "white";
+}
+
