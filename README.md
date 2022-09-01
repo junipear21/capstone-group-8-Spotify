@@ -20,7 +20,7 @@ Our webpage design was selected from StartBootstrap.com templates. Using CSS sty
 
 ![webpage](https://github.com/junipear21/capstone-group-8-Spotify/blob/main/Zach%20Work/Recommender%20web%20pic.png)
 
-Conclusion
+### Conclusion
 We created a machine learning recommender model that we feel users can rely on to provide song recommendations similar to their user input.  The machine learning recommender model along with our tableau dashboards and designed web app not only provides song recommendations for the user, but also tells a story of who the most popular artists are based on Spotify records and tells a story of how music has changed over the last sixty years.  The user has the ability to input their song selection and interact with both dashboards to learn more about the attributes that contribute to the recommender model.   
 
 #### Webpage
